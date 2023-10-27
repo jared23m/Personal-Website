@@ -25,6 +25,11 @@ body {
 .pageTitle {
     font-family:'Courier New', Courier, monospace;
     text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
 }
 
 .smBar{
@@ -54,4 +59,10 @@ header{
 a{
     color:black;
     text-decoration:none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
 }
