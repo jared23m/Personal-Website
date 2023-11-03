@@ -11,11 +11,74 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.indexFlexOne{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top:5%;
+}
+
+.indexList{
+    margin-left: 0%;
+    margin-right: 5%;
+}
 h3{
     text-align: center;
 }
+
+.quote{
+    margin-top:5%;
+    position: relative;
+}
+.quoteText{
+    position:relative;
+    top: -160px;
+    z-index: 1;
+}
+
+.quoteBG{
+    position: relative;
+    z-index: 2;
+}
+
+.quoteText{
+    z-index: 3;
+}
 body {
     background-color:crimson;
+}
+
+.webDevFlex{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom:5%;
+}
+
+.webDevText{
+    align-self: center;
+}
+
+.musicFlex{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.musicText{
+    align-self: center;
+}
+
+.mentalFlex{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 0%;
+}
+
+.mentalText{
+    align-self: center;
 }
 
 .finnickyTitles {
@@ -61,8 +124,39 @@ a{
     text-decoration:none;
 }
 
+a:hover{
+    color:azure;
+}
+
 img {
     max-width: 100%;
     height: auto;
     width: auto\9;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .indexFlexOne{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .indexList{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .webDevFlex{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .musicFlex{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .mentalFlex{
+        flex-direction: column;
+        align-items:center;
+    }
 }
